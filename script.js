@@ -1,6 +1,8 @@
-function moveButton() {
-  const button = document.getElementById("myButton");
+const button = document.getElementById("myButton");
 
+button.addEventListener("click", moveButton);
+
+function moveButton() {
   // Obtener las dimensiones del botón, la ventana y los límites máximos para mover el botón en la ventana del navegador sin que se salga de la misma
   const buttonWidth = button.offsetWidth;
   const buttonHeight = button.offsetHeight;
