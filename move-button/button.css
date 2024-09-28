@@ -1,7 +1,7 @@
 :root {
-  --glow-color: rgb(217, 176, 255);
-  --glow-spread-color: rgba(191, 123, 255, 0.781);
-  --btn-color: rgb(100, 61, 136);
+  --glow-color: #d9b0ff;
+  --glow-spread-color: #bf7bffc7;
+  --btn-color: #643d88;
 }
 
 * {
@@ -53,4 +53,38 @@ body {
   background-color: var(--glow-color);
   box-shadow: 0 0 16px 4px var(--glow-color),
     0 0 64px 32px var(--glow-spread-color), inset 0 0 12px 4px var(--glow-color);
+}
+
+.btn-Back {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  border-radius: 8px;
+  background-color: var(--btn-color);
+  color: #fff;
+  border: none;
+  bottom: 20px;
+  right: 20px;
+}
+
+.btn-Back:hover {
+  cursor: pointer;
+  animation: jelly 0.5s;
+}
+
+/* Animación */
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
 }
