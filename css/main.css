@@ -1,20 +1,23 @@
 body {
   background-color: #121212;
   color: #ffffff;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+  height: 100dvh;
   margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 .menu {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 .menu button {
-  background-color: #1f1f1f;
+  background-color: #643d88;
   color: #ffffff;
   border: none;
   padding: 15px 30px;
@@ -23,6 +26,16 @@ body {
   transition: background-color 0.3s;
   border-radius: 8px;
 }
+
 .menu button:hover {
-  background-color: #333333;
+  background-color: #7b4dbb;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.footer p {
+  margin: 0;
 }
