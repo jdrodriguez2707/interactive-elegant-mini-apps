@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <style>
+      body {
+        background-color: #121212;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .menu button {
+        background-color: #1f1f1f;
+        color: #ffffff;
+        border: none;
+        padding: 15px 30px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        border-radius: 8px;
+      }
+      .menu button:hover {
+        background-color: #333333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <button onclick="location.href='../fresh-button/index.html'">
+        Fresh Button
+      </button>
+      <button onclick="location.href='page2.html'">Counter</button>
+      <button onclick="location.href='page3.html'">Square root</button>
+    </div>
+  </body>
+</html>
