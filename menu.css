@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "kenarose";
+  src: url(./Calculadora-de-Raiz/rsc/fonts/Kenarose.ttf);
+}
+@font-face {
+  font-family: "corbel";
+  src: url(./rsc/fonts/CORBEL.TTF);
+}
+
 body {
   background-color: #121212;
   color: #ffffff;
@@ -20,11 +29,12 @@ body {
   background-color: #643d88;
   color: #ffffff;
   border: none;
-  padding: 15px 30px;
-  font-size: 16px;
+  padding: 24px 36px;
+  font-size: 24px;
   cursor: pointer;
   transition: background-color 0.3s;
   border-radius: 8px;
+  font-family: "kenarose", sans-serif;
 }
 
 .menu button:hover {
