@@ -49,3 +49,7 @@ body {
 .footer p {
   margin: 0;
 }
+
+.footer a {
+  color: #d9b0ff;
+}
