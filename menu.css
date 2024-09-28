@@ -1,10 +1,6 @@
 @font-face {
   font-family: "kenarose";
-  src: url(./Calculadora-de-Raiz/rsc/fonts/Kenarose.ttf);
-}
-@font-face {
-  font-family: "corbel";
-  src: url(./rsc/fonts/CORBEL.TTF);
+  src: url(./calculadora-de-raiz/rsc/fonts/Kenarose.ttf);
 }
 
 body {
