@@ -1,0 +1,99 @@
+:root {
+    --glow-color: #d9b0ff;
+    --glow-spread-color: #bf7bffc7;
+    --btn-color: #643d88;
+  }
+
+body{
+    margin: 0;
+    background-color: #1a0c1a;
+    color: #d9b0ff;
+    text-align:center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 70px;
+    font-family: "DM Serif Text", serif;
+    font-style: normal;
+}
+
+#main-container{
+    border: 1px solid #2e11369d;
+    border-radius: 8px;
+    padding: 3rem;
+    background-color: #3e1f47a4;
+    }
+
+#valor-contador{
+    font-size: 50px;
+    font-family: "DM Serif Text", serif;
+    font-style: normal;
+}
+
+#incrementar, 
+#reiniciar {
+    background-color: #d9b0ff;
+    border: none;
+    padding: 1rem;
+    font-size: 18px;
+    width: 10em;
+    border-radius: 1rem;
+    color: #643d88;
+    box-shadow: 0 0.4rem #e7d2eb;
+    cursor: pointer ;
+    font-family: "DM Serif Text", serif;
+    font-style: normal;
+
+    &:active {
+        color: #d9b0ff;
+        box-shadow: 0 0.2rem #dfd9d9;
+        transform: translateY(0.2rem);
+    }
+
+    &:hover{
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 16px 4px var(--glow-color),
+          0 0 64px 32px var(--glow-spread-color), inset 0 0 12px 4px var(--glow-color);
+    }
+}
+
+  .btn-Back {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    border-radius: 8px;
+    background-color: var(--btn-color);
+    color: #fff;
+    border: none;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .btn-Back:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+  }
+  
+  /* Animación */
+  @keyframes jelly {
+    0%,
+    100% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
+  
